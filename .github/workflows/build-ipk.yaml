@@ -1,8 +1,11 @@
 name: build-ipk
-on:
-  push:
-    tags:
-      - v*
+
+on: workflow_dispatch
+# on:
+#   push:
+#     tags:
+#       - v*
+
 jobs:
   package:
     name: Package release
